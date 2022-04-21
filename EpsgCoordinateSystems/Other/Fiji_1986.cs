@@ -1,0 +1,14 @@
+namespace EpsgCoordinateSystems.Other
+{
+    public class Fiji_1986 : IEpsgCoordinateSystem
+    {
+        public string Name => "Fiji 1986";
+        public long Srid => 4720;
+
+        public string OgcWkt =>
+            "GEOGCS[Fiji 1986,DATUM[Fiji_Geodetic_Datum_1986,SPHEROID[WGS 72,6378135,298.26,AUTHORITY[EPSG,7043]],AUTHORITY[EPSG,6720]],PRIMEM[Greenwich,0,AUTHORITY[EPSG,8901]],UNIT[degree,0.01745329251994328,AUTHORITY[EPSG,9122]],AUTHORITY[EPSG,4720]]";
+
+        public string EsriWkt =>
+            "GEOGCS[Fiji 1986,DATUM[Fiji_Geodetic_Datum_1986,SPHEROID[WGS 72,6378135,298.26,AUTHORITY[EPSG,7043]],AUTHORITY[EPSG,6720]],PRIMEM[Greenwich,0,AUTHORITY[EPSG,8901]],UNIT[degree,0.01745329251994328,AUTHORITY[EPSG,9122]],AUTHORITY[EPSG,4720]]";
+    }
+}
