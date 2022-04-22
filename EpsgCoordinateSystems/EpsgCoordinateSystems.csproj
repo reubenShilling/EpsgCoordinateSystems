@@ -38,7 +38,6 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="CoordinateSystem.cs" />
         <Compile Include="IEpsgCoordinateSystem.cs" />
         <Compile Include="Nad83HarnUsFt\NAD83_HARN_Arkansas_North_ftUS.cs" />
         <Compile Include="Nad83HarnUsFt\NAD83_HARN_Arkansas_South_ftUS.cs" />

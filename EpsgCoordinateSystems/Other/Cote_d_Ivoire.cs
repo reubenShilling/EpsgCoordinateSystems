@@ -3,7 +3,8 @@ namespace EpsgCoordinateSystems.Other
     public class Cote_d_Ivoire : IEpsgCoordinateSystem
     {
         public string Name => "Cote d'Ivoire";
-        public long Srid => 4226;
+        public string Units => "Unspecified";
+public long Srid => 4226;
 
         public string OgcWkt =>
             "GEOGCS[Cote d'Ivoire,DATUM[Cote_d_Ivoire,SPHEROID[Clarke 1880 (IGN),6378249.2,293.4660212936269,AUTHORITY[EPSG,7011]],AUTHORITY[EPSG,6226]],PRIMEM[Greenwich,0,AUTHORITY[EPSG,8901]],UNIT[degree,0.0174532925199433,AUTHORITY[EPSG,9108]],AUTHORITY[EPSG,4226]]";

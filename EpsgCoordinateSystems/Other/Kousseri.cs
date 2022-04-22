@@ -3,7 +3,8 @@ namespace EpsgCoordinateSystems.Other
     public class Kousseri : IEpsgCoordinateSystem
     {
         public string Name => "Kousseri";
-        public long Srid => 4198;
+        public string Units => "Unspecified";
+public long Srid => 4198;
 
         public string OgcWkt =>
             "GEOGCS[Kousseri,DATUM[Kousseri,SPHEROID[Clarke 1880 (RGS),6378249.145,293.465,AUTHORITY[EPSG,7012]],AUTHORITY[EPSG,6198]],PRIMEM[Greenwich,0,AUTHORITY[EPSG,8901]],UNIT[degree,0.01745329251994328,AUTHORITY[EPSG,9122]],AUTHORITY[EPSG,4198]]";

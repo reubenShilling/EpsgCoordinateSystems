@@ -3,7 +3,8 @@ namespace EpsgCoordinateSystems.Other
     public class Lerwick : IEpsgCoordinateSystem
     {
         public string Name => "Lerwick";
-        public long Srid => 5742;
+        public string Units => "Unspecified";
+public long Srid => 5742;
 
         public string OgcWkt =>
             "VERT_CS[Lerwick,VERT_DATUM[Lerwick,2005,AUTHORITY[EPSG,5140]],UNIT[m,1.0],AXIS[Gravity-related height,UP],AUTHORITY[EPSG,5742]]";

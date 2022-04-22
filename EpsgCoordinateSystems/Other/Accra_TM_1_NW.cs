@@ -3,6 +3,7 @@ namespace EpsgCoordinateSystems.Other
     public class Accra_TM_1_NW : IEpsgCoordinateSystem
     {
         public string Name => "Accra / TM 1 NW";
+        public string Units => "Unspecified";
         public long Srid => 2137;
 
         public string OgcWkt =>
