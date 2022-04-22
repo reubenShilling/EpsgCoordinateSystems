@@ -1,10 +1,10 @@
-namespace EpsgCoordinateSystems.Categories.Other
+using DotSpatial.Projections;namespace EpsgCoordinateSystems.Categories.Other
 {
     public class ETRS89_Faroe_Lambert : IEpsgCoordinateSystem
-    {
+    {private const int _srid = 3145; public ProjectionInfo ProjectionInfo => ProjectionInfo.FromEpsgCode(_srid);
         public string Name => "ETRS89 / Faroe Lambert";
         public string Units => "Unspecified";
-public int Srid => 3145;
+public int Srid => _srid;
 
         public string OgcWkt =>
             "PROJCS[ETRS89 / Faroe Lambert,GEOGCS[ETRS89,DATUM[European_Terrestrial_Reference_System_1989,SPHEROID[GRS 1980,6378137,298.257222101,AUTHORITY[EPSG,7019]],AUTHORITY[EPSG,6258]],PRIMEM[Greenwich,0,AUTHORITY[EPSG,8901]],UNIT[degree,0.01745329251994328,AUTHORITY[EPSG,9122]],AUTHORITY[EPSG,4258],AXIS[Latitude,NORTH],AXIS[Longitude,EAST]],UNIT[metre,1,AUTHORITY[EPSG,9001]]]";

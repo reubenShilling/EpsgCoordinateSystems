@@ -1,10 +1,10 @@
-namespace EpsgCoordinateSystems.Categories.Other
+using DotSpatial.Projections;namespace EpsgCoordinateSystems.Categories.Other
 {
     public class Segora : IEpsgCoordinateSystem
-    {
+    {private const int _srid = 4294; public ProjectionInfo ProjectionInfo => ProjectionInfo.FromEpsgCode(_srid);
         public string Name => "Segora";
         public string Units => "Unspecified";
-public int Srid => 4294;
+public int Srid => _srid;
 
         public string OgcWkt =>
             "GEOGCS[Segora,DATUM[Segora,SPHEROID[Bessel 1841,6377397.155,299.1528128,AUTHORITY[EPSG,7004]],AUTHORITY[EPSG,6294]],PRIMEM[Greenwich,0,AUTHORITY[EPSG,8901]],UNIT[degree,0.0174532925199433,AUTHORITY[EPSG,9108]],AUTHORITY[EPSG,4294]]";

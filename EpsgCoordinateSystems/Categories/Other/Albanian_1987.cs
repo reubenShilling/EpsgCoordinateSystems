@@ -1,10 +1,10 @@
-namespace EpsgCoordinateSystems.Categories.Other
+using DotSpatial.Projections;namespace EpsgCoordinateSystems.Categories.Other
 {
     public class Albanian_1987 : IEpsgCoordinateSystem
-    {
+    {private const int _srid = 4191; public ProjectionInfo ProjectionInfo => ProjectionInfo.FromEpsgCode(_srid);
         public string Name => "Albanian 1987";
         public string Units => "Unspecified";
-public int Srid => 4191;
+public int Srid => _srid;
 
         public string OgcWkt =>
             "GEOGCS[Albanian 1987,DATUM[Albanian_1987,SPHEROID[Krassowsky 1940,6378245,298.3,AUTHORITY[EPSG,7024]],AUTHORITY[EPSG,6191]],PRIMEM[Greenwich,0,AUTHORITY[EPSG,8901]],UNIT[degree,0.01745329251994328,AUTHORITY[EPSG,9122]],AUTHORITY[EPSG,4191]]";

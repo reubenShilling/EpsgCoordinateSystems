@@ -1,10 +1,10 @@
-namespace EpsgCoordinateSystems.Categories.Other
+using DotSpatial.Projections;namespace EpsgCoordinateSystems.Categories.Other
 {
     public class VN_2000 : IEpsgCoordinateSystem
-    {
+    {private const int _srid = 4756; public ProjectionInfo ProjectionInfo => ProjectionInfo.FromEpsgCode(_srid);
         public string Name => "VN-2000";
         public string Units => "Unspecified";
-public int Srid => 4756;
+public int Srid => _srid;
 
         public string OgcWkt =>
             "GEOGCS[VN-2000,DATUM[Vietnam_2000,SPHEROID[WGS 84,6378137,298.257223563,AUTHORITY[EPSG,7030]],AUTHORITY[EPSG,6756]],PRIMEM[Greenwich,0,AUTHORITY[EPSG,8901]],UNIT[degree,0.01745329251994328,AUTHORITY[EPSG,9122]],AUTHORITY[EPSG,4756]]";

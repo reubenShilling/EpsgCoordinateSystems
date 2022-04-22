@@ -1,10 +1,10 @@
-namespace EpsgCoordinateSystems.Categories.Other
+using DotSpatial.Projections;namespace EpsgCoordinateSystems.Categories.Other
 {
     public class NAD83_HARN_North_Carolina : IEpsgCoordinateSystem
-    {
+    {private const int _srid = 3358; public ProjectionInfo ProjectionInfo => ProjectionInfo.FromEpsgCode(_srid);
         public string Name => "NAD83(HARN) / North Carolina";
         public string Units => "Unspecified";
-public int Srid => 3358;
+public int Srid => _srid;
 
         public string OgcWkt =>
             "PROJCS[NAD83(HARN) / North Carolina,GEOGCS[NAD83(HARN),DATUM[NAD83_High_Accuracy_Regional_Network,SPHEROID[GRS 1980,6378137,298.257222101,AUTHORITY[EPSG,7019]],AUTHORITY[EPSG,6152]],PRIMEM[Greenwich,0,AUTHORITY[EPSG,8901]],UNIT[degree,0.01745329251994328,AUTHORITY[EPSG,9122]],AUTHORITY[EPSG,4152]],UNIT[metre,1,AUTHORITY[EPSG,9001]],PROJECTION[Lambert_Conformal_Conic_2SP],PARAMETER[standard_parallel_1,36.16666666666666],PARAMETER[standard_parallel_2,34.33333333333334],PARAMETER[latitude_of_origin,33.75],PARAMETER[central_meridian,-79],PARAMETER[false_easting,609601.22],PARAMETER[false_northing,0],AUTHORITY[EPSG,3358],AXIS[X,EAST],AXIS[Y,NORTH]]";

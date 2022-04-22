@@ -1,10 +1,10 @@
-namespace EpsgCoordinateSystems.Categories.Other
+using DotSpatial.Projections;namespace EpsgCoordinateSystems.Categories.Other
 {
     public class Padang : IEpsgCoordinateSystem
-    {
+    {private const int _srid = 4280; public ProjectionInfo ProjectionInfo => ProjectionInfo.FromEpsgCode(_srid);
         public string Name => "Padang";
         public string Units => "Unspecified";
-public int Srid => 4280;
+public int Srid => _srid;
 
         public string OgcWkt =>
             "GEOGCS[Padang,DATUM[Padang_1884,SPHEROID[Bessel 1841,6377397.155,299.1528128,AUTHORITY[EPSG,7004]],AUTHORITY[EPSG,6280]],PRIMEM[Greenwich,0,AUTHORITY[EPSG,8901]],UNIT[degree,0.01745329251994328,AUTHORITY[EPSG,9122]],AUTHORITY[EPSG,4280]]";

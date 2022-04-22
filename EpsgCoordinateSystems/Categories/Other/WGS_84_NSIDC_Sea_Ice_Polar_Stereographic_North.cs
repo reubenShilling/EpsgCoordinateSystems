@@ -1,10 +1,10 @@
-namespace EpsgCoordinateSystems.Categories.Other
+using DotSpatial.Projections;namespace EpsgCoordinateSystems.Categories.Other
 {
     public class WGS_84_NSIDC_Sea_Ice_Polar_Stereographic_North : IEpsgCoordinateSystem
-    {
+    {private const int _srid = 3413; public ProjectionInfo ProjectionInfo => ProjectionInfo.FromEpsgCode(_srid);
         public string Name => "WGS 84 / NSIDC Sea Ice Polar Stereographic North";
         public string Units => "Unspecified";
-public int Srid => 3413;
+public int Srid => _srid;
 
         public string OgcWkt =>
             "PROJCS[WGS 84 / NSIDC Sea Ice Polar Stereographic North,GEOGCS[WGS 84,DATUM[WGS_1984,SPHEROID[WGS 84,6378137,298.257223563,AUTHORITY[EPSG,7030]],AUTHORITY[EPSG,6326]],PRIMEM[Greenwich,0,AUTHORITY[EPSG,8901]],UNIT[degree,0.01745329251994328,AUTHORITY[EPSG,9122]],AUTHORITY[EPSG,4326]],UNIT[metre,1,AUTHORITY[EPSG,9001]],PROJECTION[Polar_Stereographic],PARAMETER[latitude_of_origin,70],PARAMETER[central_meridian,-45],PARAMETER[scale_factor,1],PARAMETER[false_easting,0],PARAMETER[false_northing,0],AUTHORITY[EPSG,3413],AXIS[X,UNKNOWN],AXIS[Y,UNKNOWN]]";

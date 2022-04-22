@@ -1,10 +1,10 @@
-namespace EpsgCoordinateSystems.Categories.Other
+using DotSpatial.Projections;namespace EpsgCoordinateSystems.Categories.Other
 {
     public class JAD69_Jamaica_National_Grid : IEpsgCoordinateSystem
-    {
+    {private const int _srid = 24200; public ProjectionInfo ProjectionInfo => ProjectionInfo.FromEpsgCode(_srid);
         public string Name => "JAD69 / Jamaica National Grid";
         public string Units => "Unspecified";
-public int Srid => 24200;
+public int Srid => _srid;
 
         public string OgcWkt =>
             "PROJCS[JAD69 / Jamaica National Grid,GEOGCS[JAD69,DATUM[Jamaica_1969,SPHEROID[Clarke 1866,6378206.4,294.9786982138982,AUTHORITY[EPSG,7008]],AUTHORITY[EPSG,6242]],PRIMEM[Greenwich,0,AUTHORITY[EPSG,8901]],UNIT[degree,0.01745329251994328,AUTHORITY[EPSG,9122]],AUTHORITY[EPSG,4242]],UNIT[metre,1,AUTHORITY[EPSG,9001]],PROJECTION[Lambert_Conformal_Conic_1SP],PARAMETER[latitude_of_origin,18],PARAMETER[central_meridian,-77],PARAMETER[scale_factor,1],PARAMETER[false_easting,250000],PARAMETER[false_northing,150000],AUTHORITY[EPSG,24200],AXIS[Easting,EAST],AXIS[Northing,NORTH]]";

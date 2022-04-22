@@ -1,10 +1,10 @@
-namespace EpsgCoordinateSystems.Categories.Other
+using DotSpatial.Projections;namespace EpsgCoordinateSystems.Categories.Other
 {
     public class Saint_Pierre_et_Miquelon_1950 : IEpsgCoordinateSystem
-    {
+    {private const int _srid = 4638; public ProjectionInfo ProjectionInfo => ProjectionInfo.FromEpsgCode(_srid);
         public string Name => "Saint Pierre et Miquelon 1950";
         public string Units => "Unspecified";
-public int Srid => 4638;
+public int Srid => _srid;
 
         public string OgcWkt =>
             "GEOGCS[Saint Pierre et Miquelon 1950,DATUM[Saint_Pierre_et_Miquelon_1950,SPHEROID[Clarke 1866,6378206.4,294.9786982138982,AUTHORITY[EPSG,7008]],TOWGS84[30,430,368,0,0,0,0],AUTHORITY[EPSG,6638]],PRIMEM[Greenwich,0,AUTHORITY[EPSG,8901]],UNIT[degree,0.01745329251994328,AUTHORITY[EPSG,9122]],AUTHORITY[EPSG,4638]]";

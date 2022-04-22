@@ -1,10 +1,10 @@
-namespace EpsgCoordinateSystems.Categories.Other
+using DotSpatial.Projections;namespace EpsgCoordinateSystems.Categories.Other
 {
     public class NAD27_Alabama_West : IEpsgCoordinateSystem
-    {
+    {private const int _srid = 26730; public ProjectionInfo ProjectionInfo => ProjectionInfo.FromEpsgCode(_srid);
         public string Name => "NAD27 / Alabama West";
         public string Units => "Unspecified";
-public int Srid => 26730;
+public int Srid => _srid;
 
         public string OgcWkt =>
             "PROJCS[NAD27 / Alabama West,GEOGCS[NAD27,DATUM[North_American_Datum_1927,SPHEROID[Clarke 1866,6378206.4,294.9786982138982,AUTHORITY[EPSG,7008]],AUTHORITY[EPSG,6267]],PRIMEM[Greenwich,0,AUTHORITY[EPSG,8901]],UNIT[degree,0.01745329251994328,AUTHORITY[EPSG,9122]],AUTHORITY[EPSG,4267]],UNIT[US survey foot,0.3048006096012192,AUTHORITY[EPSG,9003]],PROJECTION[Transverse_Mercator],PARAMETER[latitude_of_origin,30],PARAMETER[central_meridian,-87.5],PARAMETER[scale_factor,0.999933333],PARAMETER[false_easting,500000],PARAMETER[false_northing,0],AUTHORITY[EPSG,26730],AXIS[X,EAST],AXIS[Y,NORTH]]";

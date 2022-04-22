@@ -1,10 +1,10 @@
-namespace EpsgCoordinateSystems.Categories.Other
+using DotSpatial.Projections;namespace EpsgCoordinateSystems.Categories.Other
 {
     public class Viti_Levu_1912 : IEpsgCoordinateSystem
-    {
+    {private const int _srid = 4752; public ProjectionInfo ProjectionInfo => ProjectionInfo.FromEpsgCode(_srid);
         public string Name => "Viti Levu 1912";
         public string Units => "Unspecified";
-public int Srid => 4752;
+public int Srid => _srid;
 
         public string OgcWkt =>
             "GEOGCS[Viti Levu 1912,DATUM[Viti_Levu_1912,SPHEROID[Clarke 1880 (international foot),6378306.3696,293.4663076556361,AUTHORITY[EPSG,7055]],TOWGS84[51,391,-36,0,0,0,0],AUTHORITY[EPSG,6752]],PRIMEM[Greenwich,0,AUTHORITY[EPSG,8901]],UNIT[degree,0.01745329251994328,AUTHORITY[EPSG,9122]],AUTHORITY[EPSG,4752]]";

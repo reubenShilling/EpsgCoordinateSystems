@@ -1,10 +1,10 @@
-namespace EpsgCoordinateSystems.Categories.Other
+using DotSpatial.Projections;namespace EpsgCoordinateSystems.Categories.Other
 {
     public class Merchich_Sud_Maroc : IEpsgCoordinateSystem
-    {
+    {private const int _srid = 26192; public ProjectionInfo ProjectionInfo => ProjectionInfo.FromEpsgCode(_srid);
         public string Name => "Merchich / Sud Maroc";
         public string Units => "Unspecified";
-public int Srid => 26192;
+public int Srid => _srid;
 
         public string OgcWkt =>
             "PROJCS[Merchich / Sud Maroc,GEOGCS[Merchich,DATUM[Merchich,SPHEROID[Clarke 1880 (IGN),6378249.2,293.4660212936269,AUTHORITY[EPSG,7011]],TOWGS84[31,146,47,0,0,0,0],AUTHORITY[EPSG,6261]],PRIMEM[Greenwich,0,AUTHORITY[EPSG,8901]],UNIT[degree,0.01745329251994328,AUTHORITY[EPSG,9122]],AUTHORITY[EPSG,4261]],UNIT[metre,1,AUTHORITY[EPSG,9001]],PROJECTION[Lambert_Conformal_Conic_1SP],PARAMETER[latitude_of_origin,29.7],PARAMETER[central_meridian,-5.4],PARAMETER[scale_factor,0.999615596],PARAMETER[false_easting,500000],PARAMETER[false_northing,300000],AUTHORITY[EPSG,26192],AXIS[X,EAST],AXIS[Y,NORTH]]";

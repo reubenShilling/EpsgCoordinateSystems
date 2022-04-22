@@ -1,10 +1,10 @@
-namespace EpsgCoordinateSystems.Categories.Other
+using DotSpatial.Projections;namespace EpsgCoordinateSystems.Categories.Other
 {
     public class Camp_Area_Astro : IEpsgCoordinateSystem
-    {
+    {private const int _srid = 4715; public ProjectionInfo ProjectionInfo => ProjectionInfo.FromEpsgCode(_srid);
         public string Name => "Camp Area Astro";
         public string Units => "Unspecified";
-public int Srid => 4715;
+public int Srid => _srid;
 
         public string OgcWkt =>
             "GEOGCS[Camp Area Astro,DATUM[Camp_Area_Astro,SPHEROID[International 1924,6378388,297,AUTHORITY[EPSG,7022]],TOWGS84[-104,-129,239,0,0,0,0],AUTHORITY[EPSG,6715]],PRIMEM[Greenwich,0,AUTHORITY[EPSG,8901]],UNIT[degree,0.01745329251994328,AUTHORITY[EPSG,9122]],AUTHORITY[EPSG,4715]]";

@@ -1,10 +1,10 @@
-namespace EpsgCoordinateSystems.Categories.Other
+using DotSpatial.Projections;namespace EpsgCoordinateSystems.Categories.Other
 {
     public class RGNC_1991 : IEpsgCoordinateSystem
-    {
+    {private const int _srid = 4969; public ProjectionInfo ProjectionInfo => ProjectionInfo.FromEpsgCode(_srid);
         public string Name => "RGNC 1991";
         public string Units => "Unspecified";
-public int Srid => 4969;
+public int Srid => _srid;
 
         public string OgcWkt =>
             "GEOGCS[RGNC 1991,DATUM[Reseau Geodesique Nouvelle Caledonie 1991,SPHEROID[International 1924,6378388.0,297.0,AUTHORITY[EPSG,7022]],TOWGS84[0.0,0.0,0.0,0.0,0.0,0.0,0.0],AUTHORITY[EPSG,6645]],PRIMEM[Greenwich,0.0,AUTHORITY[EPSG,8901]],UNIT[degree,0.017453292519943295],AXIS[Geodetic latitude,NORTH],AXIS[Geodetic longitude,EAST],AXIS[Ellipsoidal height,UP],AUTHORITY[EPSG,4969]]";

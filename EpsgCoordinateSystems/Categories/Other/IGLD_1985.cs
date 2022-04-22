@@ -1,10 +1,10 @@
-namespace EpsgCoordinateSystems.Categories.Other
+using DotSpatial.Projections;namespace EpsgCoordinateSystems.Categories.Other
 {
     public class IGLD_1985 : IEpsgCoordinateSystem
-    {
+    {private const int _srid = 5609; public ProjectionInfo ProjectionInfo => ProjectionInfo.FromEpsgCode(_srid);
         public string Name => "IGLD 1985";
         public string Units => "Unspecified";
-public int Srid => 5609;
+public int Srid => _srid;
 
         public string OgcWkt =>
             "VERT_CS[IGLD 1985,VERT_DATUM[International Great Lakes Datum 1985,2005,AUTHORITY[EPSG,5205]],UNIT[m,1.0],AXIS[Gravity-related height,UP],AUTHORITY[EPSG,5609]]";

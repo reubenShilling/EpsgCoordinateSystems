@@ -1,10 +1,10 @@
-namespace EpsgCoordinateSystems.Categories.Other
+using DotSpatial.Projections;namespace EpsgCoordinateSystems.Categories.Other
 {
     public class NAD27_New_York_Long_Island : IEpsgCoordinateSystem
-    {
+    {private const int _srid = 32018; public ProjectionInfo ProjectionInfo => ProjectionInfo.FromEpsgCode(_srid);
         public string Name => "NAD27 / New York Long Island";
         public string Units => "Unspecified";
-public int Srid => 32018;
+public int Srid => _srid;
 
         public string OgcWkt =>
             "PROJCS[NAD27 / New York Long Island,GEOGCS[NAD27,DATUM[North_American_Datum_1927,SPHEROID[Clarke 1866,6378206.4,294.9786982138982,AUTHORITY[EPSG,7008]],AUTHORITY[EPSG,6267]],PRIMEM[Greenwich,0,AUTHORITY[EPSG,8901]],UNIT[degree,0.01745329251994328,AUTHORITY[EPSG,9122]],AUTHORITY[EPSG,4267]],UNIT[US survey foot,0.3048006096012192,AUTHORITY[EPSG,9003]],PROJECTION[Lambert_Conformal_Conic_2SP],PARAMETER[standard_parallel_1,41.03333333333333],PARAMETER[standard_parallel_2,40.66666666666666],PARAMETER[latitude_of_origin,40.5],PARAMETER[central_meridian,-74],PARAMETER[false_easting,1000000],PARAMETER[false_northing,0],AUTHORITY[EPSG,32018],AXIS[X,EAST],AXIS[Y,NORTH]]";

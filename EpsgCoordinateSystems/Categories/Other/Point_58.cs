@@ -1,10 +1,10 @@
-namespace EpsgCoordinateSystems.Categories.Other
+using DotSpatial.Projections;namespace EpsgCoordinateSystems.Categories.Other
 {
     public class Point_58 : IEpsgCoordinateSystem
-    {
+    {private const int _srid = 4620; public ProjectionInfo ProjectionInfo => ProjectionInfo.FromEpsgCode(_srid);
         public string Name => "Point 58";
         public string Units => "Unspecified";
-public int Srid => 4620;
+public int Srid => _srid;
 
         public string OgcWkt =>
             "GEOGCS[Point 58,DATUM[Point_58,SPHEROID[Clarke 1880 (RGS),6378249.145,293.465,AUTHORITY[EPSG,7012]],TOWGS84[-106,-129,165,0,0,0,0],AUTHORITY[EPSG,6620]],PRIMEM[Greenwich,0,AUTHORITY[EPSG,8901]],UNIT[degree,0.01745329251994328,AUTHORITY[EPSG,9122]],AUTHORITY[EPSG,4620]]";

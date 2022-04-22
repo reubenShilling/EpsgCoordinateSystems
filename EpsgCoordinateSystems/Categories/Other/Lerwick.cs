@@ -1,10 +1,10 @@
-namespace EpsgCoordinateSystems.Categories.Other
+using DotSpatial.Projections;namespace EpsgCoordinateSystems.Categories.Other
 {
     public class Lerwick : IEpsgCoordinateSystem
-    {
+    {private const int _srid = 5742; public ProjectionInfo ProjectionInfo => ProjectionInfo.FromEpsgCode(_srid);
         public string Name => "Lerwick";
         public string Units => "Unspecified";
-public int Srid => 5742;
+public int Srid => _srid;
 
         public string OgcWkt =>
             "VERT_CS[Lerwick,VERT_DATUM[Lerwick,2005,AUTHORITY[EPSG,5140]],UNIT[m,1.0],AXIS[Gravity-related height,UP],AUTHORITY[EPSG,5742]]";

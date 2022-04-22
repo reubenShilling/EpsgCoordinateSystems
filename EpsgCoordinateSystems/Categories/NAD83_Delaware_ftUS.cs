@@ -1,10 +1,10 @@
-namespace EpsgCoordinateSystems.Categories
+using DotSpatial.Projections;namespace EpsgCoordinateSystems.Categories
 {
     internal class NAD83_Delaware_ftUS : IEpsgCoordinateSystem
-    {
+    {private const int _srid = 2235; public ProjectionInfo ProjectionInfo => ProjectionInfo.FromEpsgCode(_srid);
         public string Name => "Delaware";
         public string Units => "US feet";
-        public int Srid => 2235;
+        public int Srid => _srid;
 
         public string OgcWkt =>
             "PROJCS[NAD83 / Delaware (ftUS),GEOGCS[NAD83,DATUM[North_American_Datum_1983,SPHEROID[GRS 1980,6378137,298.257222101,AUTHORITY[EPSG,7019]],AUTHORITY[EPSG,6269]],PRIMEM[Greenwich,0,AUTHORITY[EPSG,8901]],UNIT[degree,0.01745329251994328,AUTHORITY[EPSG,9122]],AUTHORITY[EPSG,4269]],UNIT[US survey foot,0.3048006096012192,AUTHORITY[EPSG,9003]],PROJECTION[Transverse_Mercator],PARAMETER[latitude_of_origin,38],PARAMETER[central_meridian,-75.41666666666667],PARAMETER[scale_factor,0.999995],PARAMETER[false_easting,656166.667],PARAMETER[false_northing,0],AUTHORITY[EPSG,2235],AXIS[X,EAST],AXIS[Y,NORTH]]";

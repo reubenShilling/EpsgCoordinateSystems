@@ -1,10 +1,10 @@
-namespace EpsgCoordinateSystems.Categories.Other
+using DotSpatial.Projections;namespace EpsgCoordinateSystems.Categories.Other
 {
     public class PZ_90 : IEpsgCoordinateSystem
-    {
+    {private const int _srid = 4923; public ProjectionInfo ProjectionInfo => ProjectionInfo.FromEpsgCode(_srid);
         public string Name => "PZ-90";
         public string Units => "Unspecified";
-public int Srid => 4923;
+public int Srid => _srid;
 
         public string OgcWkt =>
             "GEOGCS[PZ-90,DATUM[Parametrop Zemp 1990,SPHEROID[PZ-90,6378136.0,298.257839303,AUTHORITY[EPSG,7054]],TOWGS84[0.0,0.0,1.5,-0.0,0.0,-0.076,0.0],AUTHORITY[EPSG,6740]],PRIMEM[Greenwich,0.0,AUTHORITY[EPSG,8901]],UNIT[degree,0.017453292519943295],AXIS[Geodetic latitude,NORTH],AXIS[Geodetic longitude,EAST],AXIS[Ellipsoidal height,UP],AUTHORITY[EPSG,4923]]";

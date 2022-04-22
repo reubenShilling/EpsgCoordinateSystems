@@ -1,10 +1,10 @@
-namespace EpsgCoordinateSystems.Categories.Other
+using DotSpatial.Projections;namespace EpsgCoordinateSystems.Categories.Other
 {
     public class POSGAR : IEpsgCoordinateSystem
-    {
+    {private const int _srid = 4172; public ProjectionInfo ProjectionInfo => ProjectionInfo.FromEpsgCode(_srid);
         public string Name => "POSGAR";
         public string Units => "Unspecified";
-public int Srid => 4172;
+public int Srid => _srid;
 
         public string OgcWkt =>
             "GEOGCS[POSGAR,DATUM[Posiciones_Geodesicas_Argentinas,SPHEROID[GRS 1980,6378137,298.257222101,AUTHORITY[EPSG,7019]],TOWGS84[0,0,0,0,0,0,0],AUTHORITY[EPSG,6172]],PRIMEM[Greenwich,0,AUTHORITY[EPSG,8901]],UNIT[degree,0.0174532925199433,AUTHORITY[EPSG,9108]],AUTHORITY[EPSG,4172]]";

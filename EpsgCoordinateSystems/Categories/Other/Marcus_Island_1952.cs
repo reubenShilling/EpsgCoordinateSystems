@@ -1,10 +1,10 @@
-namespace EpsgCoordinateSystems.Categories.Other
+using DotSpatial.Projections;namespace EpsgCoordinateSystems.Categories.Other
 {
     public class Marcus_Island_1952 : IEpsgCoordinateSystem
-    {
+    {private const int _srid = 4711; public ProjectionInfo ProjectionInfo => ProjectionInfo.FromEpsgCode(_srid);
         public string Name => "Marcus Island 1952";
         public string Units => "Unspecified";
-public int Srid => 4711;
+public int Srid => _srid;
 
         public string OgcWkt =>
             "GEOGCS[Marcus Island 1952,DATUM[Marcus_Island_1952,SPHEROID[International 1924,6378388,297,AUTHORITY[EPSG,7022]],TOWGS84[124,-234,-25,0,0,0,0],AUTHORITY[EPSG,6711]],PRIMEM[Greenwich,0,AUTHORITY[EPSG,8901]],UNIT[degree,0.01745329251994328,AUTHORITY[EPSG,9122]],AUTHORITY[EPSG,4711]]";
