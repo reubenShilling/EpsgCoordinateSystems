@@ -6,7 +6,7 @@ namespace EpsgCoordinateSystems.Categories
     {
         private const int _srid = 3433;
 
-        public ProjectionInfo ProjectionInfo => ProjectionInfo.FromEpsgCode((int)_srid);
+        public ProjectionInfo ProjectionInfo => ProjectionInfo.FromEpsgCode(_srid);
         public string Name => "Arkansas North";
         public string Units => "US feet";
         public int Srid => _srid;
