@@ -9,7 +9,6 @@ public long Srid => 4005;
         public string OgcWkt =>
             "GEOGCS[Unknown datum based upon the Bessel Modified ellipsoid,DATUM[Not_specified_based_on_Bessel_Modified_ellipsoid,SPHEROID[Bessel Modified,6377492.018,299.1528128,AUTHORITY[EPSG,7005]],AUTHORITY[EPSG,6005]],PRIMEM[Greenwich,0,AUTHORITY[EPSG,8901]],UNIT[degree,0.01745329251994328,AUTHORITY[EPSG,9122]],AUTHORITY[EPSG,4005]]";
 
-        public string EsriWkt =>
-            "GEOGCS[Unknown datum based upon the Bessel Modified ellipsoid,DATUM[Not_specified_based_on_Bessel_Modified_ellipsoid,SPHEROID[Bessel Modified,6377492.018,299.1528128,AUTHORITY[EPSG,7005]],AUTHORITY[EPSG,6005]],PRIMEM[Greenwich,0,AUTHORITY[EPSG,8901]],UNIT[degree,0.01745329251994328,AUTHORITY[EPSG,9122]],AUTHORITY[EPSG,4005]]";
+        public string EsriWkt => "GEOGCS[Unknown datum based upon the Bessel Modified ellipsoid,DATUM[D_Bessel_Modified,SPHEROID[Bessel_Modified,6377492.018,299.1528128]],PRIMEM[Greenwich,0],UNIT[Degree,0.017453292519943295]]";
     }
 }

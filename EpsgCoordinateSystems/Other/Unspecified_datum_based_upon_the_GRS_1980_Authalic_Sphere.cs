@@ -9,7 +9,6 @@ public long Srid => 4047;
         public string OgcWkt =>
             "GEOGCS[Unspecified datum based upon the GRS 1980 Authalic Sphere,DATUM[Not_specified_based_on_GRS_1980_Authalic_Sphere,SPHEROID[GRS 1980 Authalic Sphere,6371007,0,AUTHORITY[EPSG,7048]],AUTHORITY[EPSG,6047]],PRIMEM[Greenwich,0,AUTHORITY[EPSG,8901]],UNIT[degree,0.01745329251994328,AUTHORITY[EPSG,9122]],AUTHORITY[EPSG,4047]]";
 
-        public string EsriWkt =>
-            "GEOGCS[Unspecified datum based upon the GRS 1980 Authalic Sphere,DATUM[Not_specified_based_on_GRS_1980_Authalic_Sphere,SPHEROID[GRS 1980 Authalic Sphere,6371007,0,AUTHORITY[EPSG,7048]],AUTHORITY[EPSG,6047]],PRIMEM[Greenwich,0,AUTHORITY[EPSG,8901]],UNIT[degree,0.01745329251994328,AUTHORITY[EPSG,9122]],AUTHORITY[EPSG,4047]]";
+        public string EsriWkt => "GEOGCS[Unspecified datum based upon the GRS 1980 Authalic Sphere,DATUM[D_,SPHEROID[GRS_1980_Authalic_Sphere,6371007,0]],PRIMEM[Greenwich,0],UNIT[Degree,0.017453292519943295]]";
     }
 }

@@ -9,7 +9,6 @@ public long Srid => 4024;
         public string OgcWkt =>
             "GEOGCS[Unknown datum based upon the Krassowsky 1940 ellipsoid,DATUM[Not_specified_based_on_Krassowsky_1940_ellipsoid,SPHEROID[Krassowsky 1940,6378245,298.3,AUTHORITY[EPSG,7024]],AUTHORITY[EPSG,6024]],PRIMEM[Greenwich,0,AUTHORITY[EPSG,8901]],UNIT[degree,0.01745329251994328,AUTHORITY[EPSG,9122]],AUTHORITY[EPSG,4024]]";
 
-        public string EsriWkt =>
-            "GEOGCS[Unknown datum based upon the Krassowsky 1940 ellipsoid,DATUM[Not_specified_based_on_Krassowsky_1940_ellipsoid,SPHEROID[Krassowsky 1940,6378245,298.3,AUTHORITY[EPSG,7024]],AUTHORITY[EPSG,6024]],PRIMEM[Greenwich,0,AUTHORITY[EPSG,8901]],UNIT[degree,0.01745329251994328,AUTHORITY[EPSG,9122]],AUTHORITY[EPSG,4024]]";
+        public string EsriWkt => "GEOGCS[Unknown datum based upon the Krassowsky 1940 ellipsoid,DATUM[D_Krasovsky_1940,SPHEROID[Krassowsky_1940,6378245,298.3]],PRIMEM[Greenwich,0],UNIT[Degree,0.017453292519943295]]";
     }
 }

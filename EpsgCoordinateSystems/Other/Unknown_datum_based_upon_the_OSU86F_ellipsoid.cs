@@ -9,7 +9,6 @@ public long Srid => 4032;
         public string OgcWkt =>
             "GEOGCS[Unknown datum based upon the OSU86F ellipsoid,DATUM[Not_specified_based_on_OSU86F_ellipsoid,SPHEROID[OSU86F,6378136.2,298.257223563,AUTHORITY[EPSG,7032]],AUTHORITY[EPSG,6032]],PRIMEM[Greenwich,0,AUTHORITY[EPSG,8901]],UNIT[degree,0.01745329251994328,AUTHORITY[EPSG,9122]],AUTHORITY[EPSG,4032]]";
 
-        public string EsriWkt =>
-            "GEOGCS[Unknown datum based upon the OSU86F ellipsoid,DATUM[Not_specified_based_on_OSU86F_ellipsoid,SPHEROID[OSU86F,6378136.2,298.257223563,AUTHORITY[EPSG,7032]],AUTHORITY[EPSG,6032]],PRIMEM[Greenwich,0,AUTHORITY[EPSG,8901]],UNIT[degree,0.01745329251994328,AUTHORITY[EPSG,9122]],AUTHORITY[EPSG,4032]]";
+        public string EsriWkt => "GEOGCS[Unknown datum based upon the OSU86F ellipsoid,DATUM[D_OSU_86F,SPHEROID[OSU86F,6378136.2,298.257223563]],PRIMEM[Greenwich,0],UNIT[Degree,0.017453292519943295]]";
     }
 }
