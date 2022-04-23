@@ -1,6 +1,6 @@
 using DotSpatial.Projections;namespace EpsgCoordinateSystems.Categories
 {
-    internal class NAD83_Wyoming_West_ftUS : IEpsgCoordinateSystem
+    internal class NAD83_Wyoming_West_ftUS : INad83StatePlaneUsFtCoordinateSystem
     {private const int _srid = 3739; public ProjectionInfo ProjectionInfo => ProjectionInfo.FromEpsgCode(_srid);
         public string Name => "Wyoming West";
         public string Units => "US feet";

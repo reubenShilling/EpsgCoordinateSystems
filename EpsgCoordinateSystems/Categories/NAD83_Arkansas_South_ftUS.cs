@@ -2,7 +2,7 @@ using DotSpatial.Projections;
 
 namespace EpsgCoordinateSystems.Categories
 {
-    internal class NAD83_Arkansas_South_ftUS : IEpsgCoordinateSystem
+    internal class NAD83_Arkansas_South_ftUS : INad83StatePlaneUsFtCoordinateSystem
     {
         private const int _srid = 3434;
         public ProjectionInfo ProjectionInfo => ProjectionInfo.FromEpsgCode(_srid);

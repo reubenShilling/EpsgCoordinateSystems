@@ -37,6 +37,10 @@
           <Private>True</Private>
         </Reference>
         <Reference Include="mscorlib" />
+        <Reference Include="SharpKml.Core, Version=5.2.0.0, Culture=neutral, PublicKeyToken=9bb853c026a5c0ac">
+          <HintPath>..\packages\SharpKml.Core.5.2.0\lib\net45\SharpKml.Core.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
         <Reference Include="System" />
         <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
           <HintPath>..\packages\System.Buffers.4.4.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
@@ -44,6 +48,7 @@
         </Reference>
         <Reference Include="System.Core" />
         <Reference Include="System.Data" />
+        <Reference Include="System.IO.Compression" />
         <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
           <HintPath>..\packages\System.Memory.4.5.3\lib\netstandard2.0\System.Memory.dll</HintPath>
           <Private>True</Private>
@@ -4460,10 +4465,12 @@
         <Compile Include="Categories\Other\Zanderij_TM_54_NW.cs" />
         <Compile Include="Categories\Other\Zanderij_UTM_zone_21N.cs" />
         <Compile Include="IEpsgCoordinateSystem.cs" />
+        <Compile Include="INad83StatePlaneUsFtCoordinateSystem.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <ItemGroup>
       <Content Include="Categories\Other\EpsgCoordinateSystems.csproj" />
+      <Content Include="Resources\USA State Plane Zones NAD83.kml" />
     </ItemGroup>
     <ItemGroup>
       <None Include="App.config" />

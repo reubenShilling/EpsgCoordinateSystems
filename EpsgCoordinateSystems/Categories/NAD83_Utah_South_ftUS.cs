@@ -1,6 +1,6 @@
 using DotSpatial.Projections;namespace EpsgCoordinateSystems.Categories
 {
-    internal class NAD83_Utah_South_ftUS : IEpsgCoordinateSystem
+    internal class NAD83_Utah_South_ftUS : INad83StatePlaneUsFtCoordinateSystem
     {private const int _srid = 3567; public ProjectionInfo ProjectionInfo => ProjectionInfo.FromEpsgCode(_srid);
         public string Name => "Utah South";
         public string Units => "US feet";

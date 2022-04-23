@@ -1,6 +1,6 @@
 using DotSpatial.Projections;namespace EpsgCoordinateSystems.Categories
 {
-    internal class NAD83_Oklahoma_North_ftUS : IEpsgCoordinateSystem
+    internal class NAD83_Oklahoma_North_ftUS : INad83StatePlaneUsFtCoordinateSystem
     {private const int _srid = 2267; public ProjectionInfo ProjectionInfo => ProjectionInfo.FromEpsgCode(_srid);
         public string Name => "Oklahoma North";
         public string Units => "US feet";
