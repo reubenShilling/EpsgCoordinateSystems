@@ -11,7 +11,7 @@ using SharpKml.Base;using SharpKml.Dom;using DotSpatial.Projections;namespace Ep
 
         public string EsriWkt =>
             "PROJCS[NAD83 / Delaware (ftUS),GEOGCS[GCS_North_American_1983,DATUM[D_North_American_1983,SPHEROID[GRS_1980,6378137,298.257222101]],PRIMEM[Greenwich,0],UNIT[Degree,0.017453292519943295]],PROJECTION[Transverse_Mercator],PARAMETER[latitude_of_origin,38],PARAMETER[central_meridian,-75.41666666666667],PARAMETER[scale_factor,0.999995],PARAMETER[false_easting,656166.667],PARAMETER[false_northing,0],UNIT[Foot_US,0.30480060960121924]]";
-public LinearRing Wgs84Boundary => new LinearRing{Coordinates = new CoordinateCollection(new[]{new Vector(-75.724592,38.8302858181819,0),
+public Geometry Wgs84Boundary => new LinearRing{Coordinates = new CoordinateCollection(new[]{new Vector(-75.724592,38.8302858181819,0),
 new Vector(-75.710705,38.6496648181819,0),
 new Vector(-75.707069,38.5575948181819,0),
 new Vector(-75.698798,38.463184818182,0),

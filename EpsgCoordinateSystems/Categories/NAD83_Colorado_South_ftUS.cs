@@ -11,7 +11,7 @@ using SharpKml.Base;using SharpKml.Dom;using DotSpatial.Projections;namespace Ep
 
         public string EsriWkt =>
             "PROJCS[NAD83 / Colorado South (ftUS),GEOGCS[GCS_North_American_1983,DATUM[D_North_American_1983,SPHEROID[GRS_1980,6378137,298.257222101]],PRIMEM[Greenwich,0],UNIT[Degree,0.017453292519943295]],PROJECTION[Lambert_Conformal_Conic],PARAMETER[standard_parallel_1,38.43333333333333],PARAMETER[standard_parallel_2,37.23333333333333],PARAMETER[latitude_of_origin,36.66666666666666],PARAMETER[central_meridian,-105.5],PARAMETER[false_easting,3000000],PARAMETER[false_northing,1000000],UNIT[Foot_US,0.30480060960121924]]";
-public LinearRing Wgs84Boundary => new LinearRing{Coordinates = new CoordinateCollection(new[]{new Vector(-107.47247,36.9987768181817,0),
+public Geometry Wgs84Boundary => new LinearRing{Coordinates = new CoordinateCollection(new[]{new Vector(-107.47247,36.9987768181817,0),
 new Vector(-107.41082,36.9975258181818,0),
 new Vector(-106.890377,36.9990828181819,0),
 new Vector(-106.861244,36.9894978181819,0),

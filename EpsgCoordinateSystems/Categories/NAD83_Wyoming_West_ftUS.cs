@@ -11,7 +11,7 @@ using SharpKml.Base;using SharpKml.Dom;using DotSpatial.Projections;namespace Ep
 
         public string EsriWkt =>
             "PROJCS[NAD83 / Wyoming West (ftUS),GEOGCS[GCS_North_American_1983,DATUM[D_North_American_1983,SPHEROID[GRS_1980,6378137,298.257222101]],PRIMEM[Greenwich,0],UNIT[Degree,0.017453292519943295]],PROJECTION[Transverse_Mercator],PARAMETER[latitude_of_origin,40.5],PARAMETER[central_meridian,-110.0833333333333],PARAMETER[scale_factor,0.9999375],PARAMETER[false_easting,2624666.6667],PARAMETER[false_northing,328083.3333],UNIT[Foot_US,0.30480060960121924]]";
-public LinearRing Wgs84Boundary => new LinearRing{Coordinates = new CoordinateCollection(new[]{new Vector(-111.048701,41.9961978181819,0),
+public Geometry Wgs84Boundary => new LinearRing{Coordinates = new CoordinateCollection(new[]{new Vector(-111.048701,41.9961978181819,0),
 new Vector(-111.051077,41.5785888181818,0),
 new Vector(-111.051653,41.2584228181818,0),
 new Vector(-111.051023,40.9965858181819,0),
