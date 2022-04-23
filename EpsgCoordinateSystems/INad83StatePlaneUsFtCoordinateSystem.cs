@@ -1,9 +1,10 @@
-﻿using SharpKml.Dom;
+﻿using System.Collections.Generic;
+using SharpKml.Dom;
 
 namespace EpsgCoordinateSystems
 {
     public interface INad83StatePlaneUsFtCoordinateSystem : IEpsgCoordinateSystem
     {
-        Geometry Wgs84Boundary { get; }
+        List<LinearRing> Wgs84Boundaries { get; }
     }
 }

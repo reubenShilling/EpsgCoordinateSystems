@@ -1,2 +1,216 @@
-using DotSpatial.Projections;namespace EpsgCoordinateSystems.Categories{internal class NAD83_Texas_South_ftUS : INad83StatePlaneUsFtCoordinateSystem{private const int _srid = 2279; public ProjectionInfo ProjectionInfo => ProjectionInfo.FromEpsgCode(_srid);public string Name => "Texas South";public string Units => "US feet";
-public int Srid => _srid;public string OgcWkt => "PROJCS[NAD83 / Texas South (ftUS),GEOGCS[NAD83,DATUM[North_American_Datum_1983,SPHEROID[GRS 1980,6378137,298.257222101,AUTHORITY[EPSG,7019]],AUTHORITY[EPSG,6269]],PRIMEM[Greenwich,0,AUTHORITY[EPSG,8901]],UNIT[degree,0.01745329251994328,AUTHORITY[EPSG,9122]],AUTHORITY[EPSG,4269]],UNIT[US survey foot,0.3048006096012192,AUTHORITY[EPSG,9003]],PROJECTION[Lambert_Conformal_Conic_2SP],PARAMETER[standard_parallel_1,27.83333333333333],PARAMETER[standard_parallel_2,26.16666666666667],PARAMETER[latitude_of_origin,25.66666666666667],PARAMETER[central_meridian,-98.5],PARAMETER[false_easting,984250.0000000002],PARAMETER[false_northing,16404166.667],AUTHORITY[EPSG,2279],AXIS[X,EAST],AXIS[Y,NORTH]]";public string EsriWkt => "PROJCS[NAD83 / Texas South (ftUS),GEOGCS[GCS_North_American_1983,DATUM[D_North_American_1983,SPHEROID[GRS_1980,6378137,298.257222101]],PRIMEM[Greenwich,0],UNIT[Degree,0.017453292519943295]],PROJECTION[Lambert_Conformal_Conic],PARAMETER[standard_parallel_1,27.83333333333333],PARAMETER[standard_parallel_2,26.16666666666667],PARAMETER[latitude_of_origin,25.66666666666667],PARAMETER[central_meridian,-98.5],PARAMETER[false_easting,984250.0000000002],PARAMETER[false_northing,16404166.667],UNIT[Foot_US,0.30480060960121924]]";}}
+using System.Collections.Generic;
+using SharpKml.Base;
+using SharpKml.Dom;
+using DotSpatial.Projections;
+
+namespace EpsgCoordinateSystems.Categories
+{
+    internal class NAD83_Texas_South_ftUS : INad83StatePlaneUsFtCoordinateSystem
+    {
+        private const int _srid = 2279;
+        public ProjectionInfo ProjectionInfo => ProjectionInfo.FromEpsgCode(_srid);
+        public string Name => "Texas South";
+        public string Units => "US feet";
+        public int Srid => _srid;
+
+        public string OgcWkt =>
+            "PROJCS[NAD83 / Texas South (ftUS),GEOGCS[NAD83,DATUM[North_American_Datum_1983,SPHEROID[GRS 1980,6378137,298.257222101,AUTHORITY[EPSG,7019]],AUTHORITY[EPSG,6269]],PRIMEM[Greenwich,0,AUTHORITY[EPSG,8901]],UNIT[degree,0.01745329251994328,AUTHORITY[EPSG,9122]],AUTHORITY[EPSG,4269]],UNIT[US survey foot,0.3048006096012192,AUTHORITY[EPSG,9003]],PROJECTION[Lambert_Conformal_Conic_2SP],PARAMETER[standard_parallel_1,27.83333333333333],PARAMETER[standard_parallel_2,26.16666666666667],PARAMETER[latitude_of_origin,25.66666666666667],PARAMETER[central_meridian,-98.5],PARAMETER[false_easting,984250.0000000002],PARAMETER[false_northing,16404166.667],AUTHORITY[EPSG,2279],AXIS[X,EAST],AXIS[Y,NORTH]]";
+
+        public string EsriWkt =>
+            "PROJCS[NAD83 / Texas South (ftUS),GEOGCS[GCS_North_American_1983,DATUM[D_North_American_1983,SPHEROID[GRS_1980,6378137,298.257222101]],PRIMEM[Greenwich,0],UNIT[Degree,0.017453292519943295]],PROJECTION[Lambert_Conformal_Conic],PARAMETER[standard_parallel_1,27.83333333333333],PARAMETER[standard_parallel_2,26.16666666666667],PARAMETER[latitude_of_origin,25.66666666666667],PARAMETER[central_meridian,-98.5],PARAMETER[false_easting,984250.0000000002],PARAMETER[false_northing,16404166.667],UNIT[Foot_US,0.30480060960121924]]";
+
+        public List<LinearRing> Wgs84Boundaries => new List<LinearRing>
+        {
+            new LinearRing
+            {
+                Coordinates = new CoordinateCollection(new[]
+                {
+                    new Vector(-100.21442, 28.2022128181819, 0),
+                    new Vector(-100.097258, 28.1545578181819, 0),
+                    new Vector(-99.993641, 28.0037358181819, 0),
+                    new Vector(-99.94218799999999, 27.98716681818181, 0),
+                    new Vector(-99.875066, 27.7979688181818, 0),
+                    new Vector(-99.81605299999998, 27.780391818182, 0),
+                    new Vector(-99.714821, 27.6618438181818, 0),
+                    new Vector(-99.549509, 27.6129198181819, 0),
+                    new Vector(-99.527063, 27.5045778181819, 0),
+                    new Vector(-99.49081099999999, 27.4910508181819, 0),
+                    new Vector(-99.54391099999998, 27.3189528181819, 0),
+                    new Vector(-99.465593, 27.2701818181818, 0),
+                    new Vector(-99.43747699999999, 27.1994958181818, 0),
+                    new Vector(-99.455378, 27.0289548181819, 0),
+                    new Vector(-99.393035, 26.9958618181818, 0),
+                    new Vector(-99.390839, 26.9469468181819, 0),
+                    new Vector(-99.285836, 26.8576848181818, 0),
+                    new Vector(-99.16612700000002, 26.58021481818181, 0),
+                    new Vector(-99.16898900000001, 26.5460598181818, 0),
+                    new Vector(-99.10178599999999, 26.4886758181819, 0),
+                    new Vector(-99.107033, 26.4198708181818, 0),
+                    new Vector(-98.93957, 26.3956518181818, 0),
+                    new Vector(-98.909204, 26.3606688181819, 0),
+                    new Vector(-98.82013999999999, 26.3754108181818, 0),
+                    new Vector(-98.67821899999998, 26.2423998181819, 0),
+                    new Vector(-98.600261, 26.2607958181818, 0),
+                    new Vector(-98.48881399999999, 26.2018908181818, 0),
+                    new Vector(-98.45368700000002, 26.2212678181819, 0),
+                    new Vector(-98.38481899999989, 26.1563778181819, 0),
+                    new Vector(-98.347478, 26.1590328181819, 0),
+                    new Vector(-98.328227, 26.1119988181819, 0),
+                    new Vector(-98.2925599999999, 26.1331668181818, 0),
+                    new Vector(-98.27164399999999, 26.1212418181819, 0),
+                    new Vector(-98.292236, 26.0984628181819, 0),
+                    new Vector(-98.200985, 26.0557398181819, 0),
+                    new Vector(-98.08349899999999, 26.0661078181818, 0),
+                    new Vector(-98.076623, 26.034985818182, 0),
+                    new Vector(-98.04035300000001, 26.0597538181819, 0),
+                    new Vector(-97.8677059999999, 26.0605008181819, 0),
+                    new Vector(-97.64823199999999, 26.0237988181818, 0),
+                    new Vector(-97.613195, 25.9623648181818, 0),
+                    new Vector(-97.575197, 25.9545258181819, 0),
+                    new Vector(-97.59035299999989, 25.9335918181819, 0),
+                    new Vector(-97.43460800000001, 25.8455538181819, 0),
+                    new Vector(-97.38590000000001, 25.8457158181819, 0),
+                    new Vector(-97.381247, 25.9173828181818, 0),
+                    new Vector(-97.30469299999999, 25.9390188181819, 0),
+                    new Vector(-97.307402, 25.9654788181819, 0),
+                    new Vector(-97.17247399999999, 25.9549308181818, 0),
+                    new Vector(-97.21334299999999, 26.0094258181819, 0),
+                    new Vector(-97.276577, 26.0026398181819, 0),
+                    new Vector(-97.25337500000001, 26.06867281818189, 0),
+                    new Vector(-97.353617, 26.1828018181819, 0),
+                    new Vector(-97.368953, 26.3594088181819, 0),
+                    new Vector(-97.42144099999999, 26.3854098181819, 0),
+                    new Vector(-97.47496400000001, 26.4771558181819, 0),
+                    new Vector(-97.42612099999999, 26.5185738181819, 0),
+                    new Vector(-97.45195100000001, 26.6013288181818, 0),
+                    new Vector(-97.495835, 26.7941178181819, 0),
+                    new Vector(-97.558322, 26.8463898181818, 0),
+                    new Vector(-97.568834, 26.9781948181818, 0),
+                    new Vector(-97.479266, 26.9968338181818, 0),
+                    new Vector(-97.503764, 27.0818748181818, 0),
+                    new Vector(-97.42748, 27.2654568181818, 0),
+                    new Vector(-97.54843099999999, 27.23052781818191, 0),
+                    new Vector(-97.785014, 27.2880378181818, 0),
+                    new Vector(-97.68028100000001, 27.294688818182, 0),
+                    new Vector(-97.75034599999998, 27.4199778181818, 0),
+                    new Vector(-97.60037900000002, 27.3004578181818, 0),
+                    new Vector(-97.52865799999998, 27.3444138181818, 0),
+                    new Vector(-97.507805, 27.4395258181818, 0),
+                    new Vector(-97.50070399999998, 27.3199878181817, 0),
+                    new Vector(-97.412531, 27.321346818182, 0),
+                    new Vector(-97.3317289999999, 27.5626368181819, 0),
+                    new Vector(-97.250063, 27.6891498181819, 0),
+                    new Vector(-97.30948100000001, 27.7081758181819, 0),
+                    new Vector(-97.34777599999998, 27.6317568181819, 0),
+                    new Vector(-97.39948099999999, 27.6335028181818, 0),
+                    new Vector(-97.3536349999999, 27.6411078181819, 0),
+                    new Vector(-97.32028100000001, 27.6909498181818, 0),
+                    new Vector(-97.349783, 27.7156368181818, 0),
+                    new Vector(-97.31806700000001, 27.7125408181819, 0),
+                    new Vector(-97.396826, 27.7711488181819, 0),
+                    new Vector(-97.388807, 27.8317278181819, 0),
+                    new Vector(-97.480085, 27.8205858181819, 0),
+                    new Vector(-97.499813, 27.843544818182, 0),
+                    new Vector(-97.52197099999999, 27.8639298181818, 0),
+                    new Vector(-97.496951, 27.8757738181819, 0),
+                    new Vector(-97.479626, 27.8532648181819, 0),
+                    new Vector(-97.34589499999998, 27.8734788181819, 0),
+                    new Vector(-97.361321, 27.8402508181819, 0),
+                    new Vector(-97.283759, 27.8714448181818, 0),
+                    new Vector(-97.213613, 27.83142181818179, 0),
+                    new Vector(-97.24729100000002, 27.8226288181819, 0),
+                    new Vector(-97.195739, 27.8125308181818, 0),
+                    new Vector(-97.11489199999991, 27.91568881818189, 0),
+                    new Vector(-97.136366, 27.8974998181819, 0),
+                    new Vector(-97.236482, 28.0408158181818, 0),
+                    new Vector(-97.270565, 28.0262268181819, 0),
+                    new Vector(-97.24150400000001, 28.0489428181819, 0),
+                    new Vector(-97.26055700000001, 28.0650168181819, 0),
+                    new Vector(-97.263158, 28.0803348181819, 0),
+                    new Vector(-97.28038399999998, 28.0895148181819, 0),
+                    new Vector(-97.28509099999999, 28.1034468181817, 0),
+                    new Vector(-97.29608, 28.0981998181817, 0),
+                    new Vector(-97.309742, 28.1063718181819, 0),
+                    new Vector(-97.304783, 28.1163618181819, 0),
+                    new Vector(-97.31138, 28.1358558181819, 0),
+                    new Vector(-97.3202, 28.1342358181819, 0),
+                    new Vector(-97.31828299999999, 28.1134818181818, 0),
+                    new Vector(-97.33239500000001, 28.1234988181819, 0),
+                    new Vector(-97.340441, 28.11358081818179, 0),
+                    new Vector(-97.3708249999999, 28.1313648181819, 0),
+                    new Vector(-97.38253399999999, 28.1192238181819, 0),
+                    new Vector(-97.39631300000001, 28.124164818182, 0),
+                    new Vector(-97.39099400000001, 28.1125368181819, 0),
+                    new Vector(-97.396466, 28.1020788181819, 0),
+                    new Vector(-97.42198999999999, 28.1100618181818, 0),
+                    new Vector(-97.42131499999989, 28.1321388181818, 0),
+                    new Vector(-97.445066, 28.1313288181819, 0),
+                    new Vector(-97.44314, 28.1441628181819, 0),
+                    new Vector(-97.469123, 28.1544408181818, 0),
+                    new Vector(-97.469168, 28.1705418181819, 0),
+                    new Vector(-97.49632099999999, 28.1592288181819, 0),
+                    new Vector(-97.508111, 28.1443158181818, 0),
+                    new Vector(-97.516058, 28.1546298181818, 0),
+                    new Vector(-97.53147500000001, 28.1563668181818, 0),
+                    new Vector(-97.557233, 28.1215368181819, 0),
+                    new Vector(-97.81322900000001, 28.1698848181819, 0),
+                    new Vector(-97.89721700000001, 28.1108538181818, 0),
+                    new Vector(-97.89799099999999, 28.0588788181819, 0),
+                    new Vector(-98.238938, 28.0609398181819, 0),
+                    new Vector(-98.33936, 28.0616238181818, 0),
+                    new Vector(-98.807045, 28.0610028181818, 0),
+                    new Vector(-99.390227, 28.0360368181818, 0),
+                    new Vector(-99.39263900000002, 28.2039048181817, 0),
+                    new Vector(-100.110731, 28.2032838181819, 0),
+                    new Vector(-100.21442, 28.2022128181819, 0)
+                })
+            },
+            new LinearRing
+            {
+                Coordinates = new CoordinateCollection(new[]
+                {
+                    new Vector(-97.248938, 27.5814468181818, 0),
+                    new Vector(-97.33577, 27.4411368181819, 0),
+                    new Vector(-97.376351, 27.2849598181818, 0),
+                    new Vector(-97.379645, 27.2107818181818, 0),
+                    new Vector(-97.35938599999999, 27.2840328181819, 0),
+                    new Vector(-97.22398099999999, 27.5743278181818, 0),
+                    new Vector(-97.053836, 27.8307828181819, 0),
+                    new Vector(-97.113299, 27.81951481818181, 0),
+                    new Vector(-97.07556200000001, 27.8115858181819, 0),
+                    new Vector(-97.170449, 27.7077708181818, 0),
+                    new Vector(-97.20384799999998, 27.6123798181818, 0),
+                    new Vector(-97.25894600000001, 27.6520608181818, 0),
+                    new Vector(-97.248938, 27.5814468181818, 0)
+                })
+            },
+            new LinearRing
+            {
+                Coordinates = new CoordinateCollection(new[]
+                {
+                    new Vector(-97.25150299999999, 26.4196548181819, 0),
+                    new Vector(-97.2265639999999, 26.3488968181819, 0),
+                    new Vector(-97.20916699999999, 26.2508868181819, 0),
+                    new Vector(-97.17958400000001, 26.0722728181819, 0),
+                    new Vector(-97.172042, 26.0780688181819, 0),
+                    new Vector(-97.195244, 26.2595898181818, 0),
+                    new Vector(-97.23236, 26.41849381818171, 0),
+                    new Vector(-97.29608899999998, 26.6010048181818, 0),
+                    new Vector(-97.35827900000001, 26.8030008181818, 0),
+                    new Vector(-97.38158900000001, 26.9493588181819, 0),
+                    new Vector(-97.3871869999999, 27.0975708181818, 0),
+                    new Vector(-97.378799, 27.2047698181819, 0),
+                    new Vector(-97.38905900000002, 27.2019708181818, 0),
+                    new Vector(-97.40117300000001, 27.1115568181819, 0),
+                    new Vector(-97.39557499999999, 26.9223138181819, 0),
+                    new Vector(-97.38158900000001, 26.8207128181818, 0),
+                    new Vector(-97.35827900000001, 26.7069798181819, 0),
+                    new Vector(-97.3013899999999, 26.6013648181819, 0),
+                    new Vector(-97.2788, 26.5403088181819, 0),
+                    new Vector(-97.26749599999989, 26.4792528181819, 0),
+                    new Vector(-97.25150299999999, 26.4196548181819, 0)
+                })
+            }
+        };
+    }
+}
