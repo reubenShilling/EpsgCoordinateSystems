@@ -4465,7 +4465,7 @@
         <Compile Include="Categories\Other\Zanderij_TM_54_NW.cs" />
         <Compile Include="Categories\Other\Zanderij_UTM_zone_21N.cs" />
         <Compile Include="IEpsgCoordinateSystem.cs" />
-        <Compile Include="INad83StatePlaneUsFtCoordinateSystem.cs" />
+        <Compile Include="Nad83StatePlaneUsFtCoordinateSystem.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <ItemGroup>
