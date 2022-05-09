@@ -65,7 +65,274 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Categories\Nad83StatePlaneUsFt.cs" />
+        <Compile Include="Categories\Category.cs" />
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Arkansas_North_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Arkansas_South_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_California_zone_1_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_California_zone_2_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_California_zone_3_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_California_zone_4_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_California_zone_5_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_California_zone_6_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Colorado_Central_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Colorado_North_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Colorado_South_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Connecticut_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Delaware_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Florida_East_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Florida_North_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Florida_West_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Georgia_East_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Georgia_West_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Hawaii_zone_3_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Idaho_Central_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Idaho_East_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Idaho_West_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Illinois_East_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Illinois_West_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Indiana_East_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Indiana_West_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Iowa_North_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Iowa_South_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Kansas_North_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Kansas_South_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Kentucky_North_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Kentucky_South_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Louisiana_North_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Louisiana_South_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Maine_East_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Maine_West_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Maryland_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Massachusetts_Island_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Massachusetts_Mainland_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Minnesota_Central_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Minnesota_North_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Minnesota_South_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Mississippi_East_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Mississippi_West_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Nebraska_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Nevada_Central_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Nevada_East_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Nevada_West_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_New_Hampshire_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_New_Jersey_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_New_Mexico_Central_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_New_Mexico_East_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_New_Mexico_West_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_New_York_Central_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_New_York_East_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_New_York_Long_Island_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_New_York_West_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_North_Carolina_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Ohio_North_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Ohio_South_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Oklahoma_North_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Oklahoma_South_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Pennsylvania_North_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Pennsylvania_South_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Rhode_Island_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_South_Dakota_North_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_South_Dakota_South_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Tennessee_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Texas_Central_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Texas_North_Central_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Texas_North_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Texas_South_Central_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Texas_South_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Utah_Central_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Utah_North_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Utah_South_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Virginia_North_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Virginia_South_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Washington_North_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Washington_South_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_West_Virginia_North_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_West_Virginia_South_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Wisconsin_Central_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Wisconsin_North_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Wisconsin_South_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Wyoming_East_Central_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Wyoming_East_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Wyoming_West_Central_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Categories\Nad83StatePlaneUsFt\NAD83_Wyoming_West_ftUS.cs">
+          <DependentUpon>Nad83UsFtCoordinateSystems.cs</DependentUpon>
+        </Compile>
         <Compile Include="Categories\Nad83UtmUsFt\NAD83_BLM_14N_ftUS.cs" />
         <Compile Include="Categories\Nad83UtmUsFt\NAD83_BLM_15N_ftUS.cs" />
         <Compile Include="Categories\Nad83UtmUsFt\NAD83_BLM_16N_ftUS.cs" />
@@ -90,274 +357,8 @@
         <Compile Include="Categories\Nad83UtmUsFt\NAD83_UTM_zone_7N_ftUS.cs" />
         <Compile Include="Categories\Nad83UtmUsFt\NAD83_UTM_zone_8N_ftUS.cs" />
         <Compile Include="Categories\Nad83UtmUsFt\NAD83_UTM_zone_9N_ftUS.cs" />
-        <Compile Include="Categories\NAD83_Arkansas_North_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Arkansas_South_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_California_zone_1_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_California_zone_2_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_California_zone_3_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_California_zone_4_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_California_zone_5_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_California_zone_6_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Colorado_Central_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Colorado_North_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Colorado_South_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Connecticut_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Delaware_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Florida_East_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Florida_North_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Florida_West_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Georgia_East_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Georgia_West_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Hawaii_zone_3_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Idaho_Central_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Idaho_East_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Idaho_West_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Illinois_East_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Illinois_West_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Indiana_East_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Indiana_West_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Iowa_North_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Iowa_South_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Kansas_North_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Kansas_South_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Kentucky_North_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Kentucky_South_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Louisiana_North_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Louisiana_South_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Maine_East_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Maine_West_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Maryland_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Massachusetts_Island_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Massachusetts_Mainland_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Minnesota_Central_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Minnesota_North_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Minnesota_South_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Mississippi_East_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Mississippi_West_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Nebraska_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Nevada_Central_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Nevada_East_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Nevada_West_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_New_Hampshire_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_New_Jersey_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_New_Mexico_Central_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_New_Mexico_East_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_New_Mexico_West_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_New_York_Central_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_New_York_East_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_New_York_Long_Island_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_New_York_West_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_North_Carolina_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Ohio_North_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Ohio_South_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Oklahoma_North_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Oklahoma_South_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Pennsylvania_North_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Pennsylvania_South_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Rhode_Island_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_South_Dakota_North_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_South_Dakota_South_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Tennessee_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Texas_Central_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Texas_North_Central_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Texas_North_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Texas_South_Central_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Texas_South_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Utah_Central_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Utah_North_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Utah_South_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Virginia_North_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Virginia_South_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Washington_North_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Washington_South_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_West_Virginia_North_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_West_Virginia_South_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Wisconsin_Central_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Wisconsin_North_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Wisconsin_South_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Wyoming_East_Central_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Wyoming_East_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Wyoming_West_Central_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Categories\NAD83_Wyoming_West_ftUS.cs">
-          <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
-        </Compile>
         <Compile Include="INad83UsFtCrs.cs" />
+        <Compile Include="Nad83UsFtCoordinateSystems.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <ItemGroup>

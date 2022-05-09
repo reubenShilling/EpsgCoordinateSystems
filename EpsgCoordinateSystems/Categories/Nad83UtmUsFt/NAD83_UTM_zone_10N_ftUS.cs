@@ -6,7 +6,7 @@ using SharpKml.Engine;
 
 namespace EpsgCoordinateSystems.Categories.Nad83UtmUsFt
 {
-    public class NAD83_UTM_zone_10N_ftUS : INad83UsFtCrs
+    internal class NAD83_UTM_zone_10N_ftUS : INad83UsFtCrs
     {
         private const int _srid = -1;
 
@@ -21,6 +21,7 @@ namespace EpsgCoordinateSystems.Categories.Nad83UtmUsFt
         public string Description => $"{Name}  |  NAD83-{Units}  |  (EPSG: {Srid})";
         public string Units => "US foot";
         public int Srid => _srid;
+        public Category Category => Category.UtmNad83;
         public string OgcWkt => _ogcWkt;
         public string EsriWkt => _esriWkt;
 
@@ -33,7 +34,7 @@ namespace EpsgCoordinateSystems.Categories.Nad83UtmUsFt
                     new Vector(BoundingBox.North, BoundingBox.West),
                     new Vector(BoundingBox.North, BoundingBox.East),
                     new Vector(BoundingBox.South, BoundingBox.East),
-                    new Vector(BoundingBox.South, BoundingBox.West),
+                    new Vector(BoundingBox.South, BoundingBox.West)
                 })
             }
         };
