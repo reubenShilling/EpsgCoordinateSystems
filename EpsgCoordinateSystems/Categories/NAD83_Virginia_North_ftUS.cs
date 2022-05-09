@@ -1,10 +1,6 @@
 using SharpKml.Base;
 using SharpKml.Dom;
-using SharpKml.Base;
-using SharpKml.Dom;
 using System.Collections.Generic;
-using SharpKml.Base;
-using SharpKml.Dom;
 using DotSpatial.Projections;
 
 namespace EpsgCoordinateSystems.Categories

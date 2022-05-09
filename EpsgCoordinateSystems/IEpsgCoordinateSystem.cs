@@ -1,5 +1,4 @@
 ﻿using DotSpatial.Projections;
-using SharpKml.Dom;
 
 namespace EpsgCoordinateSystems
 {
