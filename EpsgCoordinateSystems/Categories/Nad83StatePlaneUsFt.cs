@@ -7,104 +7,104 @@ namespace EpsgCoordinateSystems.Categories
     {
         public readonly List<string> Names;
         public readonly List<string> Descriptions;
-        public readonly List<IEpsgCoordinateSystem> CoordinateSystems;
-        public readonly IEpsgCoordinateSystem ArkansasNorth;
-        public readonly IEpsgCoordinateSystem ArkansasSouth;
-        public readonly IEpsgCoordinateSystem CaliforniaZone1;
-        public readonly IEpsgCoordinateSystem CaliforniaZone2;
-        public readonly IEpsgCoordinateSystem CaliforniaZone3;
-        public readonly IEpsgCoordinateSystem CaliforniaZone4;
-        public readonly IEpsgCoordinateSystem CaliforniaZone5;
-        public readonly IEpsgCoordinateSystem CaliforniaZone6;
-        public readonly IEpsgCoordinateSystem ColoradoCentral;
-        public readonly IEpsgCoordinateSystem ColoradoNorth;
-        public readonly IEpsgCoordinateSystem ColoradoSouth;
-        public readonly IEpsgCoordinateSystem Connecticut;
-        public readonly IEpsgCoordinateSystem Delaware;
-        public readonly IEpsgCoordinateSystem FloridaEast;
-        public readonly IEpsgCoordinateSystem FloridaNorth;
-        public readonly IEpsgCoordinateSystem FloridaWest;
-        public readonly IEpsgCoordinateSystem GeorgiaEast;
-        public readonly IEpsgCoordinateSystem GeorgiaWest;
-        public readonly IEpsgCoordinateSystem HawaiiZone3;
-        public readonly IEpsgCoordinateSystem IdahoCentral;
-        public readonly IEpsgCoordinateSystem IdahoEast;
-        public readonly IEpsgCoordinateSystem IdahoWest;
-        public readonly IEpsgCoordinateSystem IllinoisEast;
-        public readonly IEpsgCoordinateSystem IllinoisWest;
-        public readonly IEpsgCoordinateSystem IndianaEast;
-        public readonly IEpsgCoordinateSystem IndianaWest;
-        public readonly IEpsgCoordinateSystem IowaNorth;
-        public readonly IEpsgCoordinateSystem IowaSouth;
-        public readonly IEpsgCoordinateSystem KansasNorth;
-        public readonly IEpsgCoordinateSystem KansasSouth;
-        public readonly IEpsgCoordinateSystem KentuckyNorth;
-        public readonly IEpsgCoordinateSystem KentuckySouth;
-        public readonly IEpsgCoordinateSystem LouisianaNorth;
-        public readonly IEpsgCoordinateSystem LouisianaSouth;
-        public readonly IEpsgCoordinateSystem MaineEast;
-        public readonly IEpsgCoordinateSystem MaineWest;
-        public readonly IEpsgCoordinateSystem Maryland;
-        public readonly IEpsgCoordinateSystem MassachusettsIsland;
-        public readonly IEpsgCoordinateSystem MassachusettsMainland;
-        public readonly IEpsgCoordinateSystem MinnesotaCentral;
-        public readonly IEpsgCoordinateSystem MinnesotaNorth;
-        public readonly IEpsgCoordinateSystem MinnesotaSouth;
-        public readonly IEpsgCoordinateSystem MississippiEast;
-        public readonly IEpsgCoordinateSystem MississippiWest;
-        public readonly IEpsgCoordinateSystem Nebraska;
-        public readonly IEpsgCoordinateSystem NevadaCentral;
-        public readonly IEpsgCoordinateSystem NevadaEast;
-        public readonly IEpsgCoordinateSystem NevadaWest;
-        public readonly IEpsgCoordinateSystem NewHampshire;
-        public readonly IEpsgCoordinateSystem NewJersey;
-        public readonly IEpsgCoordinateSystem NewMexicoCentral;
-        public readonly IEpsgCoordinateSystem NewMexicoEast;
-        public readonly IEpsgCoordinateSystem NewMexicoWest;
-        public readonly IEpsgCoordinateSystem NewYorkCentral;
-        public readonly IEpsgCoordinateSystem NewYorkEast;
-        public readonly IEpsgCoordinateSystem NewYorkLongIsland;
-        public readonly IEpsgCoordinateSystem NewYorkWest;
-        public readonly IEpsgCoordinateSystem NorthCarolina;
-        public readonly IEpsgCoordinateSystem OhioNorth;
-        public readonly IEpsgCoordinateSystem OhioSouth;
-        public readonly IEpsgCoordinateSystem OklahomaNorth;
-        public readonly IEpsgCoordinateSystem OklahomaSouth;
-        public readonly IEpsgCoordinateSystem PennsylvaniaNorth;
-        public readonly IEpsgCoordinateSystem PennsylvaniaSouth;
-        public readonly IEpsgCoordinateSystem RhodeIsland;
-        public readonly IEpsgCoordinateSystem SouthDakotaNorth;
-        public readonly IEpsgCoordinateSystem SouthDakotaSouth;
-        public readonly IEpsgCoordinateSystem Tennessee;
-        public readonly IEpsgCoordinateSystem TexasCentral;
-        public readonly IEpsgCoordinateSystem TexasNorthCentral;
-        public readonly IEpsgCoordinateSystem TexasNorth;
-        public readonly IEpsgCoordinateSystem TexasSouthCentral;
-        public readonly IEpsgCoordinateSystem TexasSouth;
-        public readonly IEpsgCoordinateSystem UtahCentral;
-        public readonly IEpsgCoordinateSystem UtahNorth;
-        public readonly IEpsgCoordinateSystem UtahSouth;
-        public readonly IEpsgCoordinateSystem VirginiaNorth;
-        public readonly IEpsgCoordinateSystem VirginiaSouth;
-        public readonly IEpsgCoordinateSystem WashingtonNorth;
-        public readonly IEpsgCoordinateSystem WashingtonSouth;
-        public readonly IEpsgCoordinateSystem WestVirginiaNorth;
-        public readonly IEpsgCoordinateSystem WestVirginiaSouth;
-        public readonly IEpsgCoordinateSystem WisconsinCentral;
-        public readonly IEpsgCoordinateSystem WisconsinNorth;
-        public readonly IEpsgCoordinateSystem WisconsinSouth;
-        public readonly IEpsgCoordinateSystem WyomingEastCentral;
-        public readonly IEpsgCoordinateSystem WyomingEast;
-        public readonly IEpsgCoordinateSystem WyomingWestCentral;
-        public readonly IEpsgCoordinateSystem WyomingWest;
+        public readonly List<INad83UsFtCrs> CoordinateSystems;
+        public readonly INad83UsFtCrs ArkansasNorth;
+        public readonly INad83UsFtCrs ArkansasSouth;
+        public readonly INad83UsFtCrs CaliforniaZone1;
+        public readonly INad83UsFtCrs CaliforniaZone2;
+        public readonly INad83UsFtCrs CaliforniaZone3;
+        public readonly INad83UsFtCrs CaliforniaZone4;
+        public readonly INad83UsFtCrs CaliforniaZone5;
+        public readonly INad83UsFtCrs CaliforniaZone6;
+        public readonly INad83UsFtCrs ColoradoCentral;
+        public readonly INad83UsFtCrs ColoradoNorth;
+        public readonly INad83UsFtCrs ColoradoSouth;
+        public readonly INad83UsFtCrs Connecticut;
+        public readonly INad83UsFtCrs Delaware;
+        public readonly INad83UsFtCrs FloridaEast;
+        public readonly INad83UsFtCrs FloridaNorth;
+        public readonly INad83UsFtCrs FloridaWest;
+        public readonly INad83UsFtCrs GeorgiaEast;
+        public readonly INad83UsFtCrs GeorgiaWest;
+        public readonly INad83UsFtCrs HawaiiZone3;
+        public readonly INad83UsFtCrs IdahoCentral;
+        public readonly INad83UsFtCrs IdahoEast;
+        public readonly INad83UsFtCrs IdahoWest;
+        public readonly INad83UsFtCrs IllinoisEast;
+        public readonly INad83UsFtCrs IllinoisWest;
+        public readonly INad83UsFtCrs IndianaEast;
+        public readonly INad83UsFtCrs IndianaWest;
+        public readonly INad83UsFtCrs IowaNorth;
+        public readonly INad83UsFtCrs IowaSouth;
+        public readonly INad83UsFtCrs KansasNorth;
+        public readonly INad83UsFtCrs KansasSouth;
+        public readonly INad83UsFtCrs KentuckyNorth;
+        public readonly INad83UsFtCrs KentuckySouth;
+        public readonly INad83UsFtCrs LouisianaNorth;
+        public readonly INad83UsFtCrs LouisianaSouth;
+        public readonly INad83UsFtCrs MaineEast;
+        public readonly INad83UsFtCrs MaineWest;
+        public readonly INad83UsFtCrs Maryland;
+        public readonly INad83UsFtCrs MassachusettsIsland;
+        public readonly INad83UsFtCrs MassachusettsMainland;
+        public readonly INad83UsFtCrs MinnesotaCentral;
+        public readonly INad83UsFtCrs MinnesotaNorth;
+        public readonly INad83UsFtCrs MinnesotaSouth;
+        public readonly INad83UsFtCrs MississippiEast;
+        public readonly INad83UsFtCrs MississippiWest;
+        public readonly INad83UsFtCrs Nebraska;
+        public readonly INad83UsFtCrs NevadaCentral;
+        public readonly INad83UsFtCrs NevadaEast;
+        public readonly INad83UsFtCrs NevadaWest;
+        public readonly INad83UsFtCrs NewHampshire;
+        public readonly INad83UsFtCrs NewJersey;
+        public readonly INad83UsFtCrs NewMexicoCentral;
+        public readonly INad83UsFtCrs NewMexicoEast;
+        public readonly INad83UsFtCrs NewMexicoWest;
+        public readonly INad83UsFtCrs NewYorkCentral;
+        public readonly INad83UsFtCrs NewYorkEast;
+        public readonly INad83UsFtCrs NewYorkLongIsland;
+        public readonly INad83UsFtCrs NewYorkWest;
+        public readonly INad83UsFtCrs NorthCarolina;
+        public readonly INad83UsFtCrs OhioNorth;
+        public readonly INad83UsFtCrs OhioSouth;
+        public readonly INad83UsFtCrs OklahomaNorth;
+        public readonly INad83UsFtCrs OklahomaSouth;
+        public readonly INad83UsFtCrs PennsylvaniaNorth;
+        public readonly INad83UsFtCrs PennsylvaniaSouth;
+        public readonly INad83UsFtCrs RhodeIsland;
+        public readonly INad83UsFtCrs SouthDakotaNorth;
+        public readonly INad83UsFtCrs SouthDakotaSouth;
+        public readonly INad83UsFtCrs Tennessee;
+        public readonly INad83UsFtCrs TexasCentral;
+        public readonly INad83UsFtCrs TexasNorthCentral;
+        public readonly INad83UsFtCrs TexasNorth;
+        public readonly INad83UsFtCrs TexasSouthCentral;
+        public readonly INad83UsFtCrs TexasSouth;
+        public readonly INad83UsFtCrs UtahCentral;
+        public readonly INad83UsFtCrs UtahNorth;
+        public readonly INad83UsFtCrs UtahSouth;
+        public readonly INad83UsFtCrs VirginiaNorth;
+        public readonly INad83UsFtCrs VirginiaSouth;
+        public readonly INad83UsFtCrs WashingtonNorth;
+        public readonly INad83UsFtCrs WashingtonSouth;
+        public readonly INad83UsFtCrs WestVirginiaNorth;
+        public readonly INad83UsFtCrs WestVirginiaSouth;
+        public readonly INad83UsFtCrs WisconsinCentral;
+        public readonly INad83UsFtCrs WisconsinNorth;
+        public readonly INad83UsFtCrs WisconsinSouth;
+        public readonly INad83UsFtCrs WyomingEastCentral;
+        public readonly INad83UsFtCrs WyomingEast;
+        public readonly INad83UsFtCrs WyomingWestCentral;
+        public readonly INad83UsFtCrs WyomingWest;
 
-        public IEpsgCoordinateSystem GetBySrid(int srid)
+        public INad83UsFtCrs GetBySrid(int srid)
         {
             var thisType = GetType();
             var fields = thisType.GetFields();
             foreach (var f in fields)
             {
-                if (!(f.GetValue(this) is IEpsgCoordinateSystem cs))
+                if (!(f.GetValue(this) is INad83UsFtCrs cs))
                     continue;
                 if (cs.Srid == srid)
                     return cs;
@@ -113,13 +113,13 @@ namespace EpsgCoordinateSystems.Categories
             return null;
         }
 
-        public IEpsgCoordinateSystem GetByName(string name)
+        public INad83UsFtCrs GetByName(string name)
         {
             var thisType = GetType();
             var fields = thisType.GetFields();
             foreach (var f in fields)
             {
-                if (!(f.GetValue(this) is IEpsgCoordinateSystem cs))
+                if (!(f.GetValue(this) is INad83UsFtCrs cs))
                     continue;
                 if (cs.Name == name)
                     return cs;
@@ -222,10 +222,10 @@ namespace EpsgCoordinateSystems.Categories
 
             var thisType = GetType();
             var fields = thisType.GetFields();
-            CoordinateSystems = new List<IEpsgCoordinateSystem>();
+            CoordinateSystems = new List<INad83UsFtCrs>();
             foreach (var f in fields)
             {
-                if (!(f.GetValue(this) is IEpsgCoordinateSystem cs))
+                if (!(f.GetValue(this) is INad83UsFtCrs cs))
                     continue;
                 CoordinateSystems.Add(cs);
             }

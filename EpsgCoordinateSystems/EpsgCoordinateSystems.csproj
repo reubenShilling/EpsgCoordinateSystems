@@ -357,7 +357,7 @@
         <Compile Include="Categories\NAD83_Wyoming_West_ftUS.cs">
           <DependentUpon>Nad83StatePlaneUsFt.cs</DependentUpon>
         </Compile>
-        <Compile Include="IEpsgCoordinateSystem.cs" />
+        <Compile Include="INad83UsFtCrs.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <ItemGroup>
