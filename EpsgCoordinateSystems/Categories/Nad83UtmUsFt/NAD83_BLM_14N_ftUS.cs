@@ -1,9 +1,15 @@
-using DotSpatial.Projections;namespace EpsgCoordinateSystems.Categories.Nad83UtmUsFt
+using System.Collections.Generic;
+using DotSpatial.Projections;
+using SharpKml.Dom;
+
+namespace EpsgCoordinateSystems.Categories.Nad83UtmUsFt
 {
     public class NAD83_BLM_14N_ftUS : IEpsgCoordinateSystem
-    {private const int _srid = 32164; public ProjectionInfo ProjectionInfo => ProjectionInfo.FromEpsgCode(_srid);
+    {
+        private const int _srid = 32164;
+        public ProjectionInfo ProjectionInfo => ProjectionInfo.FromEpsgCode(_srid);
         public string Name => "BLM 14N";
-
+        public string Description => $"{Name}  |  NAD83-{Units}  |  (EPSG: {Srid})";
         public string Units => "US feet";
         public int Srid => _srid;
 
@@ -12,5 +18,7 @@ using DotSpatial.Projections;namespace EpsgCoordinateSystems.Categories.Nad83Utm
 
         public string EsriWkt =>
             "PROJCS[NAD83 / BLM 14N (ftUS),GEOGCS[GCS_North_American_1983,DATUM[D_North_American_1983,SPHEROID[GRS_1980,6378137,298.257222101]],PRIMEM[Greenwich,0],UNIT[Degree,0.017453292519943295]],PROJECTION[Transverse_Mercator],PARAMETER[latitude_of_origin,0],PARAMETER[central_meridian,-99],PARAMETER[scale_factor,0.9996],PARAMETER[false_easting,1640416.67],PARAMETER[false_northing,0],UNIT[Foot_US,0.30480060960121924]]";
+
+        public List<LinearRing> Wgs84Boundaries { get; }
     }
 }

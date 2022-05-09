@@ -7,98 +7,104 @@ namespace EpsgCoordinateSystems.Categories
     {
         public readonly List<string> Names;
         public readonly List<string> Descriptions;
-        public readonly List<Nad83StatePlaneUsFtCoordinateSystem> CoordinateSystems;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem ArkansasNorth;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem ArkansasSouth;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem CaliforniaZone1;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem CaliforniaZone2;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem CaliforniaZone3;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem CaliforniaZone4;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem CaliforniaZone5;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem CaliforniaZone6;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem ColoradoCentral;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem ColoradoNorth;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem ColoradoSouth;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem Connecticut;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem Delaware;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem FloridaEast;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem FloridaNorth;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem FloridaWest;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem GeorgiaEast;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem GeorgiaWest;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem HawaiiZone3;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem IdahoCentral;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem IdahoEast;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem IdahoWest;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem IllinoisEast;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem IllinoisWest;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem IndianaEast;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem IndianaWest;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem KentuckyNorth;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem KentuckySingleZone;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem KentuckySouth;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem LouisianaNorth;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem LouisianaOffshore;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem LouisianaSouth;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem MaineEast;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem MaineWest;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem Maryland;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem MassachusettsIsland;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem MassachusettsMainland;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem MinnesotaCentral;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem MinnesotaNorth;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem MinnesotaSouth;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem MississippiEast;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem MississippiWest;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem Nebraska;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem NewHampshire;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem NewMexicoCentral;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem NewMexicoEast;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem NewMexicoWest;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem NewYorkCentral;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem NewYorkEast;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem NewYorkLongIsland;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem NewYorkWest;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem NorthCarolina;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem OhioNorth;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem OhioSouth;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem OklahomaNorth;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem OklahomaSouth;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem PennsylvaniaNorth;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem PennsylvaniaSouth;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem RhodeIsland;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem SouthDakotaNorth;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem SouthDakotaSouth;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem Tennessee;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem TexasCentral;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem TexasNorthCentral;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem TexasNorth;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem TexasSouthCentral;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem TexasSouth;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem UtahCentral;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem UtahNorth;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem UtahSouth;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem VirginiaNorth;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem VirginiaSouth;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem WashingtonNorth;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem WashingtonSouth;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem WestVirginiaNorth;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem WestVirginiaSouth;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem WisconsinCentral;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem WisconsinNorth;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem WisconsinSouth;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem WyomingEastCentral;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem WyomingEast;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem WyomingWestCentral;
-        public readonly Nad83StatePlaneUsFtCoordinateSystem WyomingWest;
+        public readonly List<IEpsgCoordinateSystem> CoordinateSystems;
+        public readonly IEpsgCoordinateSystem ArkansasNorth;
+        public readonly IEpsgCoordinateSystem ArkansasSouth;
+        public readonly IEpsgCoordinateSystem CaliforniaZone1;
+        public readonly IEpsgCoordinateSystem CaliforniaZone2;
+        public readonly IEpsgCoordinateSystem CaliforniaZone3;
+        public readonly IEpsgCoordinateSystem CaliforniaZone4;
+        public readonly IEpsgCoordinateSystem CaliforniaZone5;
+        public readonly IEpsgCoordinateSystem CaliforniaZone6;
+        public readonly IEpsgCoordinateSystem ColoradoCentral;
+        public readonly IEpsgCoordinateSystem ColoradoNorth;
+        public readonly IEpsgCoordinateSystem ColoradoSouth;
+        public readonly IEpsgCoordinateSystem Connecticut;
+        public readonly IEpsgCoordinateSystem Delaware;
+        public readonly IEpsgCoordinateSystem FloridaEast;
+        public readonly IEpsgCoordinateSystem FloridaNorth;
+        public readonly IEpsgCoordinateSystem FloridaWest;
+        public readonly IEpsgCoordinateSystem GeorgiaEast;
+        public readonly IEpsgCoordinateSystem GeorgiaWest;
+        public readonly IEpsgCoordinateSystem HawaiiZone3;
+        public readonly IEpsgCoordinateSystem IdahoCentral;
+        public readonly IEpsgCoordinateSystem IdahoEast;
+        public readonly IEpsgCoordinateSystem IdahoWest;
+        public readonly IEpsgCoordinateSystem IllinoisEast;
+        public readonly IEpsgCoordinateSystem IllinoisWest;
+        public readonly IEpsgCoordinateSystem IndianaEast;
+        public readonly IEpsgCoordinateSystem IndianaWest;
+        public readonly IEpsgCoordinateSystem IowaNorth;
+        public readonly IEpsgCoordinateSystem IowaSouth;
+        public readonly IEpsgCoordinateSystem KansasNorth;
+        public readonly IEpsgCoordinateSystem KansasSouth;
+        public readonly IEpsgCoordinateSystem KentuckyNorth;
+        public readonly IEpsgCoordinateSystem KentuckySouth;
+        public readonly IEpsgCoordinateSystem LouisianaNorth;
+        public readonly IEpsgCoordinateSystem LouisianaSouth;
+        public readonly IEpsgCoordinateSystem MaineEast;
+        public readonly IEpsgCoordinateSystem MaineWest;
+        public readonly IEpsgCoordinateSystem Maryland;
+        public readonly IEpsgCoordinateSystem MassachusettsIsland;
+        public readonly IEpsgCoordinateSystem MassachusettsMainland;
+        public readonly IEpsgCoordinateSystem MinnesotaCentral;
+        public readonly IEpsgCoordinateSystem MinnesotaNorth;
+        public readonly IEpsgCoordinateSystem MinnesotaSouth;
+        public readonly IEpsgCoordinateSystem MississippiEast;
+        public readonly IEpsgCoordinateSystem MississippiWest;
+        public readonly IEpsgCoordinateSystem Nebraska;
+        public readonly IEpsgCoordinateSystem NevadaCentral;
+        public readonly IEpsgCoordinateSystem NevadaEast;
+        public readonly IEpsgCoordinateSystem NevadaWest;
+        public readonly IEpsgCoordinateSystem NewHampshire;
+        public readonly IEpsgCoordinateSystem NewJersey;
+        public readonly IEpsgCoordinateSystem NewMexicoCentral;
+        public readonly IEpsgCoordinateSystem NewMexicoEast;
+        public readonly IEpsgCoordinateSystem NewMexicoWest;
+        public readonly IEpsgCoordinateSystem NewYorkCentral;
+        public readonly IEpsgCoordinateSystem NewYorkEast;
+        public readonly IEpsgCoordinateSystem NewYorkLongIsland;
+        public readonly IEpsgCoordinateSystem NewYorkWest;
+        public readonly IEpsgCoordinateSystem NorthCarolina;
+        public readonly IEpsgCoordinateSystem OhioNorth;
+        public readonly IEpsgCoordinateSystem OhioSouth;
+        public readonly IEpsgCoordinateSystem OklahomaNorth;
+        public readonly IEpsgCoordinateSystem OklahomaSouth;
+        public readonly IEpsgCoordinateSystem PennsylvaniaNorth;
+        public readonly IEpsgCoordinateSystem PennsylvaniaSouth;
+        public readonly IEpsgCoordinateSystem RhodeIsland;
+        public readonly IEpsgCoordinateSystem SouthDakotaNorth;
+        public readonly IEpsgCoordinateSystem SouthDakotaSouth;
+        public readonly IEpsgCoordinateSystem Tennessee;
+        public readonly IEpsgCoordinateSystem TexasCentral;
+        public readonly IEpsgCoordinateSystem TexasNorthCentral;
+        public readonly IEpsgCoordinateSystem TexasNorth;
+        public readonly IEpsgCoordinateSystem TexasSouthCentral;
+        public readonly IEpsgCoordinateSystem TexasSouth;
+        public readonly IEpsgCoordinateSystem UtahCentral;
+        public readonly IEpsgCoordinateSystem UtahNorth;
+        public readonly IEpsgCoordinateSystem UtahSouth;
+        public readonly IEpsgCoordinateSystem VirginiaNorth;
+        public readonly IEpsgCoordinateSystem VirginiaSouth;
+        public readonly IEpsgCoordinateSystem WashingtonNorth;
+        public readonly IEpsgCoordinateSystem WashingtonSouth;
+        public readonly IEpsgCoordinateSystem WestVirginiaNorth;
+        public readonly IEpsgCoordinateSystem WestVirginiaSouth;
+        public readonly IEpsgCoordinateSystem WisconsinCentral;
+        public readonly IEpsgCoordinateSystem WisconsinNorth;
+        public readonly IEpsgCoordinateSystem WisconsinSouth;
+        public readonly IEpsgCoordinateSystem WyomingEastCentral;
+        public readonly IEpsgCoordinateSystem WyomingEast;
+        public readonly IEpsgCoordinateSystem WyomingWestCentral;
+        public readonly IEpsgCoordinateSystem WyomingWest;
 
-        public Nad83StatePlaneUsFtCoordinateSystem GetBySrid(int srid)
+        public IEpsgCoordinateSystem GetBySrid(int srid)
         {
             var thisType = GetType();
             var fields = thisType.GetFields();
             foreach (var f in fields)
             {
-                if (!(f.GetValue(this) is Nad83StatePlaneUsFtCoordinateSystem cs))
+                if (!(f.GetValue(this) is IEpsgCoordinateSystem cs))
                     continue;
                 if (cs.Srid == srid)
                     return cs;
@@ -107,13 +113,13 @@ namespace EpsgCoordinateSystems.Categories
             return null;
         }
 
-        public Nad83StatePlaneUsFtCoordinateSystem GetByName(string name)
+        public IEpsgCoordinateSystem GetByName(string name)
         {
             var thisType = GetType();
             var fields = thisType.GetFields();
             foreach (var f in fields)
             {
-                if (!(f.GetValue(this) is Nad83StatePlaneUsFtCoordinateSystem cs))
+                if (!(f.GetValue(this) is IEpsgCoordinateSystem cs))
                     continue;
                 if (cs.Name == name)
                     return cs;
@@ -146,15 +152,17 @@ namespace EpsgCoordinateSystems.Categories
             IdahoCentral = new NAD83_Idaho_Central_ftUS();
             IdahoEast = new NAD83_Idaho_East_ftUS();
             IdahoWest = new NAD83_Idaho_West_ftUS();
+            IowaNorth = new NAD83_Iowa_North_ftUS();
+            IowaSouth = new NAD83_Iowa_South_ftUS();
+            KansasNorth = new NAD83_Kansas_North_ftUS();
+            KansasSouth = new NAD83_Kansas_South_ftUS();
             IllinoisEast = new NAD83_Illinois_East_ftUS();
             IllinoisWest = new NAD83_Illinois_West_ftUS();
             IndianaEast = new NAD83_Indiana_East_ftUS();
             IndianaWest = new NAD83_Indiana_West_ftUS();
             KentuckyNorth = new NAD83_Kentucky_North_ftUS();
-            KentuckySingleZone = new NAD83_Kentucky_Single_Zone_ftUS();
             KentuckySouth = new NAD83_Kentucky_South_ftUS();
             LouisianaNorth = new NAD83_Louisiana_North_ftUS();
-            LouisianaOffshore = new NAD83_Louisiana_Offshore_ftUS();
             LouisianaSouth = new NAD83_Louisiana_South_ftUS();
             MaineEast = new NAD83_Maine_East_ftUS();
             MaineWest = new NAD83_Maine_West_ftUS();
@@ -167,7 +175,11 @@ namespace EpsgCoordinateSystems.Categories
             MississippiEast = new NAD83_Mississippi_East_ftUS();
             MississippiWest = new NAD83_Mississippi_West_ftUS();
             Nebraska = new NAD83_Nebraska_ftUS();
+            NevadaCentral = new NAD83_Nevada_Central_ftUS();
+            NevadaEast = new NAD83_Nevada_East_ftUS();
+            NevadaWest = new NAD83_Nevada_West_ftUS();
             NewHampshire = new NAD83_New_Hampshire_ftUS();
+            NewJersey = new NAD83_New_Jersey_ftUS();
             NewMexicoCentral = new NAD83_New_Mexico_Central_ftUS();
             NewMexicoEast = new NAD83_New_Mexico_East_ftUS();
             NewMexicoWest = new NAD83_New_Mexico_West_ftUS();
@@ -210,10 +222,10 @@ namespace EpsgCoordinateSystems.Categories
 
             var thisType = GetType();
             var fields = thisType.GetFields();
-            CoordinateSystems = new List<Nad83StatePlaneUsFtCoordinateSystem>();
+            CoordinateSystems = new List<IEpsgCoordinateSystem>();
             foreach (var f in fields)
             {
-                if (!(f.GetValue(this) is Nad83StatePlaneUsFtCoordinateSystem cs))
+                if (!(f.GetValue(this) is IEpsgCoordinateSystem cs))
                     continue;
                 CoordinateSystems.Add(cs);
             }
